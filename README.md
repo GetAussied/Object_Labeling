@@ -1,30 +1,31 @@
-Image Annotation Tool
+# Image Annotation Tool
 
-A simple Python GUI tool for manually labeling images with bounding boxes using Tkinter and Pillow (PIL). Designed for creating datasets for object detection tasks.
+A simple **Python GUI tool** for manually labeling images with bounding boxes using **Tkinter** and **Pillow (PIL)**. Designed for creating datasets for object detection tasks.
 
-Features:
+---
 
-Browse and display images from a dataset folder.
+## Features
 
-Draw and classify objects using bounding boxes.
+- Browse and display images from a dataset folder.
+- Draw and classify objects using bounding boxes.
+- Assign class labels (e.g., `person`) and color-code annotations.
+- Save annotations in **JSON format** (`database_labels.json`) with image paths and bounding boxes.
+- Prevents duplicate annotations for the same image.
 
-Assign class labels (e.g., "person") and color-code annotations.
+---
 
-Save annotations in JSON format (database_labels.json) with image paths and bounding boxes.
+## Usage
 
-Prevents duplicate annotations for the same image.
+1. Load your image folder.
+2. Click **Next Image** to browse images.
+3. Draw bounding boxes:
+   - **Left-click** to start the box.
+   - **Right-click** to finish the box and classify it.
+4. Click **Save** to store your labels in the JSON file.
 
-Usage:
+---
 
-Load your image folder.
+## Notes
 
-Click Next Image to browse images.
-
-Draw bounding boxes using left-click to start and right-click to finish and classify.
-
-Save your labels with the Save button.
-
-Ideal for small-scale object detection dataset creation without complex frameworks.
-
-Note:
-__main__.py was a solution to my object detection labeling, for easy of use replicate as intended.
+- Ideal for small-scale object detection dataset creation without complex frameworks.
+- `main.py` is a ready-to-use solution for labeling your dataset. For best results, replicate the setup as intended.
